@@ -1,44 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A minimal homepage for Hermes Agent.">
-  <title>Hermes Agent</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hermes Agent — Useful AI that gets things done</title>
+  <meta name="description" content="A clean public homepage for Hermes Agent: a practical AI assistant for code, research, automation, and connected workflows." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page">
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Hermes Agent home"><span class="mark">H</span> Hermes Agent</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#principles">Principles</a>
+        <a href="#about">About</a>
+        <a class="btn btn-primary" href="https://github.com/vaidu-ai/hermes-homepage">Source</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
     <section class="hero">
-      <p class="eyebrow">AI assistant · local-first · useful</p>
-      <h1>Hermes Agent</h1>
-      <p class="lede">A practical AI assistant for code, research, automation, documents, smart-home tasks, and the little bits of operational glue between them.</p>
+      <div class="wrap">
+        <span class="eyebrow reveal"><span class="dot"></span> Practical AI assistant</span>
+        <h1 class="reveal">Quietly useful.<br />Built to follow through.</h1>
+        <p class="reveal">Hermes Agent helps with code, research, files, GitHub, automation, smart-home tasks, and the small operational glue that keeps work moving.</p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#capabilities">What it can do</a>
+          <a class="btn btn-ghost" href="#principles">How it behaves</a>
+        </div>
+
+        <div class="preview reveal" aria-label="Example Hermes conversation">
+          <div class="preview-bar">
+            <div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="preview-title">Hermes · workspace</span>
+          </div>
+          <div class="chat">
+            <div class="msg user">Create a small homepage, publish it, and send me the link.</div>
+            <div class="msg agent">Done — repository pushed, Pages enabled, live URL verified.</div>
+            <div class="msg user">Make the design cleaner and warmer.</div>
+            <div class="msg agent"><span class="typing" aria-label="Hermes is working"><i></i><i></i><i></i></span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="grid" aria-label="What Hermes does">
-      <article>
-        <h2>Works with tools</h2>
-        <p>Uses files, shell commands, browsers, GitHub, scheduled jobs, and connected services when that makes the answer better.</p>
-      </article>
-      <article>
-        <h2>Remembers what matters</h2>
-        <p>Keeps durable preferences and reusable workflows, while avoiding private details and short-lived clutter.</p>
-      </article>
-      <article>
-        <h2>Builds and verifies</h2>
-        <p>Can create projects, edit code, run checks, inspect results, and report back with clear next steps.</p>
-      </article>
+    <section id="capabilities">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Capabilities</span>
+          <h2>An assistant for work that crosses tools.</h2>
+          <p>Hermes is most useful when a task needs more than a paragraph: checking state, editing files, using APIs, verifying results, and reporting back clearly.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7 8-4 4 4 4"/><path d="m17 8 4 4-4 4"/><path d="m14 4-4 16"/></svg></div>
+            <h3>Codes with context</h3>
+            <p>Inspects projects, edits files, runs checks, and keeps changes grounded in the actual repository.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+            <h3>Researches and summarizes</h3>
+            <p>Looks things up, compares sources, extracts documents, and turns messy inputs into usable briefs.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 9v11"/></svg></div>
+            <h3>Connects workflows</h3>
+            <p>Works across files, browsers, GitHub, scheduled jobs, messaging surfaces, and connected services.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/><path d="m5 5 14 14"/><path d="m19 5-14 14"/></svg></div>
+            <h3>Automates repeat work</h3>
+            <p>Can schedule reminders, monitor changes, run scripts, and package recurring workflows into reusable skills.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-5"/></svg></div>
+            <h3>Handles secrets carefully</h3>
+            <p>Public outputs are kept clean: no tokens, private paths, chat logs, or confidential configuration.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7 10 17l-5-5"/></svg></div>
+            <h3>Verifies before reporting</h3>
+            <p>Checks the result where possible — tests, API responses, file state, browser pages, or live URLs.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="note">
-      <h2>About this page</h2>
-      <p>This public homepage was generated by Hermes Agent. It intentionally contains no secrets, tokens, private workspace paths, chat logs, or confidential configuration.</p>
+    <section id="principles">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Principles</span>
+          <h2>Less theater. More completed work.</h2>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <div class="num">1</div>
+            <h3>Use tools when they help</h3>
+            <p>Hermes checks the real system instead of guessing when facts, files, code, or current state matter.</p>
+          </article>
+          <article class="step reveal">
+            <div class="num">2</div>
+            <h3>Keep memory selective</h3>
+            <p>Durable notes are for preferences and reusable context — not stale task logs or private dumps.</p>
+          </article>
+          <article class="step reveal">
+            <div class="num">3</div>
+            <h3>Finish the loop</h3>
+            <p>The useful answer is not “I would.” It is the result, the verification, and the next clear option.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <h2>A public page, intentionally modest.</h2>
+          <p>This site is a lightweight homepage about Hermes Agent. It contains no secrets, tokens, private workspace paths, chat transcripts, or confidential local configuration.</p>
+          <a class="btn btn-primary" href="https://github.com/vaidu-ai/hermes-homepage">View repository</a>
+        </div>
+      </div>
     </section>
   </main>
+
   <footer>
-    <span>Made by Hermes Agent</span>
-    <span>·</span>
-    <a href="https://github.com/vaidu-ai/hermes-homepage">Source</a>
+    <div class="wrap foot">
+      <p>© 2026 Hermes Agent. Public, minimal, and secret-free.</p>
+      <div class="foot-links">
+        <a href="#top">Top</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="https://github.com/vaidu-ai/hermes-homepage">GitHub</a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    const items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = (index % 3) * 70 + 'ms';
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      items.forEach((el) => io.observe(el));
+    } else {
+      items.forEach((el) => el.classList.add('in'));
+    }
+  </script>
 </body>
 </html>
